@@ -10,6 +10,10 @@ import java.util.List;
  */
 public interface TweetStorage {
     
-    public abstract List<Tweet> getBankedTweets();
+    public List<Tweet> getBankedTweetsForUser(User user);
+    
+    public List<User> getUsers();
+    
+    public void deleteTweet(Tweet tweet);
     
 }

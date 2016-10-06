@@ -2,12 +2,14 @@
  */
 package twitterpostbot.poster;
 
+import twitterpostbot.storage.Tweet;
+
 /**
  *
  * @author barnsbarn
  */
 public interface TweetPoster {
     
-    public void postNewTweet();
+    public boolean postNewTweet(Tweet tweet);
     
 }
